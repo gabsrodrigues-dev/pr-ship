@@ -1,0 +1,3 @@
+bin/pr-ship usr/bin
+lib/pr-ship/ui.sh usr/share/pr-ship
+lib/pr-ship/lang/*.sh usr/share/pr-ship/lang
