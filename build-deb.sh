@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="1.0.1"
+VERSION="1.0.2"
 PKG_NAME="pr-ship"
 BUILD_DIR="build/${PKG_NAME}_${VERSION}"
 

@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-PRSHIP_VERSION="1.0.1"
+PRSHIP_VERSION="1.0.2"
 PRSHIP_CONFIG_DIR="${HOME}/.config/pr-ship"
 PRSHIP_CONFIG_FILE="${PRSHIP_CONFIG_DIR}/config"
 PRSHIP_LANG_DIR="/usr/share/pr-ship/lang"

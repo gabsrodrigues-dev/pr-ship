@@ -26,7 +26,7 @@ sudo bash install.sh
 git clone https://github.com/gabsrodrigues-dev/pr-ship.git
 cd pr-ship
 bash build-deb.sh
-sudo dpkg -i build/pr-ship_1.0.1.deb
+sudo dpkg -i build/pr-ship_1.0.2.deb
 ```
 
 ### Option 4: Makefile
@@ -122,7 +122,7 @@ debuild -S -sa
 5. Upload to your PPA:
 
 ```bash
-dput ppa:YOUR_USER/pr-ship ../pr-ship_1.0.1-1_source.changes
+dput ppa:YOUR_USER/pr-ship ../pr-ship_1.0.2-1_source.changes
 ```
 
 Users can then install with:

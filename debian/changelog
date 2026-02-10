@@ -1,8 +1,8 @@
-pr-ship (1.0.1-1~ppa1~ubuntu24.04.1) noble; urgency=low
+pr-ship (1.0.2-1~ppa2~ubuntu24.04.1) noble; urgency=low
 
-  * Initial release
-  * Create and merge GitHub PRs from the terminal
+  * Fix build: add explicit build target to Makefile
+  * Publish for Ubuntu 24.04 (noble)
   * Multi-language support (en, pt_BR, es)
   * Interactive setup with configurable defaults
 
- -- Gabriel Rodrigues <gabrielrod.ifmg@gmail.com>  Mon, 10 Feb 2026 00:00:00 +0000
+ -- Gabriel Rodrigues <gabrielrod.ifmg@gmail.com>  Mon, 10 Feb 2026 17:12:00 -0300

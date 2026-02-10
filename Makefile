@@ -3,7 +3,9 @@ BINDIR = $(PREFIX)/bin
 SHAREDIR = $(PREFIX)/share/pr-ship
 LANGDIR = $(SHAREDIR)/lang
 
-.PHONY: install uninstall
+.PHONY: build install uninstall
+
+build:
 
 install:
 	install -d $(DESTDIR)$(BINDIR)
