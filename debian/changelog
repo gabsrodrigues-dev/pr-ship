@@ -1,8 +1,8 @@
-pr-ship (1.0.0-1) stable; urgency=low
+pr-ship (1.0.0-1~ppa1) jammy; urgency=low
 
   * Initial release
   * Create and merge GitHub PRs from the terminal
   * Multi-language support (en, pt_BR, es)
   * Interactive setup with configurable defaults
 
- -- Gabriel Rodrigues <gabsrodrigues-dev@users.noreply.github.com>  Mon, 10 Feb 2026 00:00:00 +0000
+ -- Gabriel Rodrigues <gabrielrod.ifmg@gmail.com>  Mon, 10 Feb 2026 00:00:00 +0000
