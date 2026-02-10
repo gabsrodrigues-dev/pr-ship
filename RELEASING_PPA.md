@@ -42,6 +42,16 @@ Suites supported by Launchpad PPAs are listed here:
 
 https://launchpad.net/ubuntu/+ppas
 
+### Publishing for Ubuntu 24.04 (noble)
+
+If your target machines are Ubuntu 24.04, you must publish for `noble`.
+
+Recommended version pattern for `noble` (keeps versions unique and sortable):
+
+- `1.0.1-1~ppa1~ubuntu24.04.1`
+
+And set the suite to `noble` in `debian/changelog`.
+
 ## 2) Bump version in `debian/changelog`
 
 Use `dch` to bump the version and set the suite.
@@ -81,6 +91,19 @@ From the repo root:
 
 ```bash
 debuild -S -sa
+```
+
+### Re-uploading without re-sending the `.orig.tar.gz`
+
+Launchpad may reject multiple uploads of the same `.orig.tar.gz`.
+
+- First upload of an upstream version (e.g. first time uploading `1.0.1`): use `-sa`
+- Fixing/re-uploading the same upstream version (e.g. `~ppa2`, `~ppa3`): use `-sd`
+
+Example:
+
+```bash
+debuild -S -sd
 ```
 
 Outputs will be generated in the **parent directory** (`../`), including:

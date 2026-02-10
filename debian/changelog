@@ -1,4 +1,4 @@
-pr-ship (1.0.0-1~ppa1) jammy; urgency=low
+pr-ship (1.0.1-1~ppa1~ubuntu24.04.1) noble; urgency=low
 
   * Initial release
   * Create and merge GitHub PRs from the terminal

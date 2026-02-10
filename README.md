@@ -4,24 +4,7 @@ Create and merge GitHub Pull Requests from the terminal in one command.
 
 ## Installation
 
-### Option 1: Quick install (from source)
-
-```bash
-git clone https://github.com/gabsrodrigues-dev/pr-ship.git
-cd pr-ship
-sudo bash install.sh
-```
-
-### Option 2: Debian package (.deb)
-
-```bash
-git clone https://github.com/gabsrodrigues-dev/pr-ship.git
-cd pr-ship
-bash build-deb.sh
-sudo dpkg -i build/pr-ship_1.0.0.deb
-```
-
-### Option 3: Via PPA (apt-get)
+### Option 1: Via PPA (apt-get)
 
 ```bash
 sudo add-apt-repository ppa:gabsrodrigues-dev/pr-ship
@@ -29,7 +12,22 @@ sudo apt-get update
 sudo apt-get install pr-ship
 ```
 
-> To publish on a PPA, see [Publishing to PPA](#publishing-to-ppa) below.
+### Option 2: Quick install (from source)
+
+```bash
+git clone https://github.com/gabsrodrigues-dev/pr-ship.git
+cd pr-ship
+sudo bash install.sh
+```
+
+### Option 3: Debian package (.deb)
+
+```bash
+git clone https://github.com/gabsrodrigues-dev/pr-ship.git
+cd pr-ship
+bash build-deb.sh
+sudo dpkg -i build/pr-ship_1.0.1.deb
+```
 
 ### Option 4: Makefile
 
@@ -124,7 +122,7 @@ debuild -S -sa
 5. Upload to your PPA:
 
 ```bash
-dput ppa:YOUR_USER/pr-ship ../pr-ship_1.0.0-1_source.changes
+dput ppa:YOUR_USER/pr-ship ../pr-ship_1.0.1-1_source.changes
 ```
 
 Users can then install with:
