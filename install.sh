@@ -27,7 +27,6 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 if [[ -f "${BIN_DIR}/pr-ship" ]] || [[ -d "${SHARE_DIR}" ]]; then
-  ui_clear_stage
   ui_header "pr-ship install"
   ui_warn "pr-ship already seems to be installed"
   ui_kv "Binary" "${BIN_DIR}/pr-ship"
@@ -52,8 +51,6 @@ if [[ -f "${BIN_DIR}/pr-ship" ]] || [[ -d "${SHARE_DIR}" ]]; then
     fi
   fi
 fi
-
-ui_clear_stage
 ui_header "pr-ship install"
 
 ui_info "Installing files..."

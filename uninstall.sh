@@ -29,7 +29,6 @@ else
     ui_warn() { echo "! $*"; }
     ui_header() { echo "==> $*"; echo ""; }
     ui_kv() { echo "$1: $2"; }
-    ui_clear_stage() { true; }
     ui_init_colors() { true; }
   fi
 fi
@@ -58,15 +57,12 @@ if [[ -f "${INSTALL_PREFIX}/bin/pr-ship" ]] || [[ -d "${SHARE_DIR}" ]]; then
 fi
 
 if [[ "$installed" == false ]]; then
-  ui_clear_stage
   ui_header "pr-ship uninstall"
   ui_err "pr-ship is not installed"
   ui_info "Nothing to remove"
   echo ""
   exit 1
 fi
-
-ui_clear_stage
 ui_header "pr-ship uninstall"
 
 ui_info "Removing installed files..."

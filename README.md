@@ -26,7 +26,7 @@ sudo bash install.sh
 git clone https://github.com/gabsrodrigues-dev/pr-ship.git
 cd pr-ship
 bash build-deb.sh
-sudo dpkg -i build/pr-ship_1.0.2.deb
+sudo dpkg -i build/pr-ship_1.0.3.deb
 ```
 
 ### Option 4: Makefile

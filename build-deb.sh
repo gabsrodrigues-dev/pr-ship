@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-VERSION="1.0.2"
+VERSION="1.0.3"
 PKG_NAME="pr-ship"
 BUILD_DIR="build/${PKG_NAME}_${VERSION}"
 
@@ -12,6 +12,7 @@ mkdir -p "${BUILD_DIR}/usr/bin"
 mkdir -p "${BUILD_DIR}/usr/share/pr-ship/lang"
 
 install -m 755 bin/pr-ship "${BUILD_DIR}/usr/bin/pr-ship"
+install -m 644 lib/pr-ship/ui.sh "${BUILD_DIR}/usr/share/pr-ship/ui.sh"
 
 for lang_file in lib/pr-ship/lang/*.sh; do
   install -m 644 "$lang_file" "${BUILD_DIR}/usr/share/pr-ship/lang/$(basename "$lang_file")"
